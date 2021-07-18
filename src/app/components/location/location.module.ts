@@ -3,16 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { LocationRoutingModule } from './location-routing.module';
 import { LocationComponent } from './location.component';
-import { CatalogComponent } from './catalog/catalog.component';
-import { CatalogDetailsComponent } from './catalog/catalog-details/catalog-details.component';
 import { BreadcrumbModule } from 'angular-crumbs';
 import { CategoryComponent } from './category/category.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { CategoryDetailsComponent } from './category/category-details/category-details.component';
 
 
 @NgModule({
-  declarations: [LocationComponent, CatalogComponent, CatalogDetailsComponent, CategoryComponent],
+  declarations: [LocationComponent, CategoryComponent, CategoryDetailsComponent],
   imports: [
     CommonModule,
     LocationRoutingModule,

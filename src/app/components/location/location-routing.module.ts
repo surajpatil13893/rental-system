@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CatalogDetailsComponent } from './catalog/catalog-details/catalog-details.component';
+import { CategoryDetailsComponent } from './category/category-details/category-details.component';
 import { CategoryComponent } from './category/category.component';
 
 import { LocationComponent } from './location.component';
@@ -18,7 +18,7 @@ const routes: Routes = [{
 },
 {
   path: 'category-details',
-  component: CatalogDetailsComponent,
+  component: CategoryDetailsComponent,
   data: {
     breadcrumb: 'category-details',
   }

@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { CatalogService } from 'src/app/services/catalog.service';
 
 @Component({
-  selector: 'app-catalog-details',
-  templateUrl: './catalog-details.component.html',
-  styleUrls: ['./catalog-details.component.scss']
+  selector: 'app-category-details',
+  templateUrl: './category-details.component.html',
+  styleUrls: ['./category-details.component.scss']
 })
-export class CatalogDetailsComponent implements OnInit {
+export class CategoryDetailsComponent implements OnInit {
   branchSubCategories: any[];
 
-  constructor(private catalogService: CatalogService, private router: Router) { }
+  constructor(private catalogService: CatalogService) { }
 
   ngOnInit(): void {
     this.catalogService.getBranchSubCategoriesData().subscribe((data) => {
